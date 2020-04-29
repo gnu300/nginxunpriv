@@ -125,6 +125,9 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 # gnu300: create ssl folder for volumeMount and deletes the default config
 RUN mkdir -p /etc/nginx/ssl/ && rm -Rf /etc/nginx/conf.d/default.conf
 
+# gnu300: add somewhat sane nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 8080
 
 STOPSIGNAL SIGTERM
