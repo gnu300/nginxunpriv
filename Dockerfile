@@ -2,7 +2,7 @@ ARG IMAGE=alpine:3.10
 FROM $IMAGE
 
 LABEL original.maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
-LABEL maintainer="gnu300 <gernot@nusshall>"
+LABEL maintainer="gnu300 <gernot@nusshall.com>"
 
 ENV NGINX_VERSION   1.16.1
 ENV NJS_VERSION     0.3.8
