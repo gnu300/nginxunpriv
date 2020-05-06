@@ -1,6 +1,8 @@
 # nginxunpriv
 
-You can either build the image based on the Dockerfile on your own or you can pull it from quay.io: `docker pull quay.io/gnu300/nginxunpriv`
+You can either build the image based on the Dockerfile on your own or you can pull it from quay.io:
+
+`docker pull quay.io/gnu300/nginxunpriv`
 
 This Dockerfile is based on the official Nginx Inc unprivileged Docker Alpine image https://github.com/nginxinc/docker-nginx-unprivileged .
 The purpose of this "yet another nginx image" is solely for debugging. Therefore i added additionaly to the official Dockerfile some best practices for an OpenShift environment and debugging tools. 
